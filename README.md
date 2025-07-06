@@ -9,7 +9,7 @@ Welcome to this collection of workflows for ComfyUI, designed and optimized to w
 
 ## Prerequisites
 
-**IMPORTANT:** These workflows are designed to work with the specific ecosystem and custom nodes installed by the **[UmeAiRT ComfyUI Auto-Installer](https://github.com/YOUR_USERNAME/YOUR_INSTALLER_REPO)**. If you are using a standard ComfyUI installation, you will likely encounter missing node errors.
+**IMPORTANT:** These workflows are designed to work with the specific ecosystem and custom nodes installed by the **[UmeAiRT ComfyUI Auto-Installer](https://github.com/UmeAiRT/ComfyUI-Auto_installer)**. If you are using a standard ComfyUI installation, you will likely encounter missing node errors.
 
 ## How to Use
 
