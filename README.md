@@ -66,8 +66,8 @@ Workflows designed for the HiDream (image) model.
 Workflows for the LTX-Video model (video generation).
 
 #### Base & GGUF
-* **`LTXV - TXT to VIDEO (base/gguf).json`**: Text-to-video generation.
-* **`LTXV - IMG to VIDEO (base/gguf).json`**: Animates a starting image to create a video.
+* **`LTXV - TXT to VIDEO.json`**: Text-to-video generation.
+* **`LTXV - IMG to VIDEO.json`**: Animates a starting image to create a video.
 
 ---
 
