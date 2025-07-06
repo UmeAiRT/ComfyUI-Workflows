@@ -81,10 +81,16 @@ Workflows for models in the WAN 2.1 family (video generation).
 * **`VIDEO EXTENSION.json`**: Extends the duration of an existing video.
 * **`VIDEO to LOOP.json`**: Transforms a short video into a seamless loop.
 * **`StartEndFrames.json`**: Generates a video by specifying a start and an end frame.
-* **Tools**
-    * `Frames interpolations.json`: Increases the smoothness of a video by creating intermediate frames.
-    * `Upscaler.json`: Increases the resolution of a video.
-    * `Video merge.json`: Merges several video clips.
+
+---
+
+### General Tools
+Workflows for various utility tasks that can be used with multiple models.
+
+* **`IMG to TXT.json`**: Generates a text prompt (caption) from an input image.
+* **`Frames interpolations.json`**: Increases the smoothness of a video by creating intermediate frames.
+* **`Upscaler.json`**: Increases the resolution of an image or video frames.
+* **`Video merge.json`**: Merges several video clips.
 
 ---
 
