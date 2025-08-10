@@ -31,11 +31,12 @@ Here is the list of available workflows, categorized by model family.
 ### FLUX
 Workflows optimized for models in the FLUX family.
 
-#### Base (fp16 / fp8)
+#### Base (fp16 / fp8) & GGUF
 * **`TXT to IMG.json`**: Basic text-to-image generation.
 * **`IMG to IMG.json`**: Basic image-to-image generation.
 * **`INPAINT.json`**: For modifying or replacing part of an image (inpainting).
 * **`OUTPAINT.json`**: For extending an image beyond its original borders (outpainting).
+* **`KONTEXT.json`**: For contextual editing and generation.
 * **ControlNet**
     * `CtrlNet Canny.json`: Guides generation using Canny edges.
     * `CtrlNet Depth.json`: Guides generation using a depth map.
@@ -47,8 +48,13 @@ Workflows optimized for models in the FLUX family.
     * `PuLID_Redux.json`: Using PuLID and Redux for face enhancement.
     * `Upscale.json`: Upscales the resolution of a generated image.
 
-#### GGUF
-Versions optimized for VRAM using quantized GGUF models. The workflows are identical to the base versions.
+#### Nunchaku
+A specific set of workflows for the Nunchaku variant.
+* **`TXT to IMG.json`**
+* **`IMG to IMG.json`**
+* **`INPAINT.json`**
+* **`OUTPAINT.json`**
+* **`KONTEXT.json`**
 
 ---
 
@@ -74,13 +80,24 @@ Workflows for the LTX-Video model (video generation).
 ### WAN
 Workflows for models in the WAN 2.1 family (video generation).
 
-#### Base & GGUF
+#### WAN 2.1
+
+##### Base & GGUF
 * **`TXT to VIDEO.json`**: Text-to-video generation.
 * **`IMG to VIDEO.json`**: Animates an image to create a video.
-* **`Face to VIDEO.json`** (GGUF): Applies an identity (face) to a video.
+* **`Face to VIDEO.json`**: Applies an identity (face) to a video.
 * **`VIDEO EXTENSION.json`**: Extends the duration of an existing video.
 * **`VIDEO to LOOP.json`**: Transforms a short video into a seamless loop.
 * **`StartEndFrames.json`**: Generates a video by specifying a start and an end frame.
+* **`FUN Control.json`**: Advanced controls for video generation.
+* **`VACE.json`**: Video composition and editing.
+
+#### WAN 2.2
+
+##### Base & GGUF
+* **`TXT to VIDEO.json`**
+* **`IMG to VIDEO.json`**
+* **`StartEndFrame.json`**
 
 ---
 
