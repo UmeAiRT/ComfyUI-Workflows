@@ -1,8 +1,8 @@
 {
   "id": "fefd764a-bea6-4bff-9b54-2fc975989101",
   "revision": 0,
-  "last_node_id": 521,
-  "last_link_id": 1112,
+  "last_node_id": 523,
+  "last_link_id": 1114,
   "nodes": [
     {
       "id": 385,
@@ -620,7 +620,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 25,
+      "order": 30,
       "mode": 0,
       "inputs": [
         {
@@ -2164,7 +2164,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 27,
+      "order": 29,
       "mode": 0,
       "inputs": [
         {
@@ -2223,7 +2223,7 @@
       "type": "UpscaleModelLoader",
       "pos": [
         1750,
-        560
+        590
       ],
       "size": [
         410,
@@ -2262,7 +2262,7 @@
       "type": "mxSlider",
       "pos": [
         1750,
-        660
+        690
       ],
       "size": [
         410,
@@ -2305,57 +2305,6 @@
       ],
       "color": "#432",
       "bgcolor": "#653",
-      "shape": 1
-    },
-    {
-      "id": 460,
-      "type": "CLIPLoader",
-      "pos": [
-        1750,
-        140
-      ],
-      "size": [
-        410,
-        110
-      ],
-      "flags": {},
-      "order": 5,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "label": " ",
-          "name": "CLIP",
-          "type": "CLIP",
-          "slot_index": 0,
-          "links": [
-            967,
-            968,
-            1038,
-            1039
-          ]
-        }
-      ],
-      "title": "CLIP",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.45",
-        "Node name for S&R": "CLIPLoader",
-        "models": [
-          {
-            "name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
-            "url": "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors",
-            "directory": "text_encoders"
-          }
-        ]
-      },
-      "widgets_values": [
-        "umt5-xxl-encoder-fp8-e4m3fn-scaled.safetensors",
-        "wan",
-        "default"
-      ],
-      "color": "#223",
-      "bgcolor": "#335",
       "shape": 1
     },
     {
@@ -2681,7 +2630,7 @@
         170
       ],
       "flags": {},
-      "order": 6,
+      "order": 5,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -2868,7 +2817,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 28,
+      "order": 26,
       "mode": 0,
       "inputs": [
         {
@@ -2925,7 +2874,7 @@
         30
       ],
       "flags": {},
-      "order": 7,
+      "order": 6,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -3350,98 +3299,6 @@
       "shape": 1
     },
     {
-      "id": 502,
-      "type": "mxSlider",
-      "pos": [
-        1750,
-        70
-      ],
-      "size": [
-        410,
-        30
-      ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 8,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "label": "%",
-          "name": "",
-          "type": "INT",
-          "slot_index": 0,
-          "links": [
-            1071
-          ]
-        }
-      ],
-      "title": "Reduce VRAM usage (BlockSwap)",
-      "properties": {
-        "cnr_id": "comfyui-mxtoolkit",
-        "ver": "3659749ab6b19ab4bc7b2ed144e3bcf92813fbf7",
-        "Node name for S&R": "mxSlider",
-        "value": 100,
-        "min": 0,
-        "max": 100,
-        "step": 1,
-        "decimals": 0,
-        "snap": true,
-        "aux_id": "Smirnov75/ComfyUI-mxToolkit",
-        "widget_ue_connectable": {
-          "Xi": true,
-          "Xf": true,
-          "isfloatX": true
-        }
-      },
-      "widgets_values": [
-        100,
-        100,
-        0
-      ],
-      "color": "#432",
-      "bgcolor": "#653",
-      "shape": 1
-    },
-    {
-      "id": 415,
-      "type": "Fast Groups Bypasser (rgthree)",
-      "pos": [
-        1750,
-        730
-      ],
-      "size": [
-        410,
-        230
-      ],
-      "flags": {},
-      "order": 9,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "label": " ",
-          "name": "OPT_CONNECTION",
-          "type": "*",
-          "links": null
-        }
-      ],
-      "title": "Optimisations",
-      "properties": {
-        "matchColors": "#696969",
-        "matchTitle": "",
-        "showNav": false,
-        "showAllGraphs": true,
-        "sort": "position",
-        "customSortAlphabet": "",
-        "toggleRestriction": "default"
-      },
-      "color": "#2a363b",
-      "bgcolor": "#3f5159",
-      "shape": 1
-    },
-    {
       "id": 426,
       "type": "mxSlider",
       "pos": [
@@ -3453,7 +3310,7 @@
         30
       ],
       "flags": {},
-      "order": 10,
+      "order": 7,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -3501,7 +3358,7 @@
         170
       ],
       "flags": {},
-      "order": 11,
+      "order": 8,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -3557,14 +3414,14 @@
       "type": "Fast Groups Muter (rgthree)",
       "pos": [
         1750,
-        390
+        420
       ],
       "size": [
         410,
         130
       ],
       "flags": {},
-      "order": 12,
+      "order": 9,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -3601,7 +3458,7 @@
         170
       ],
       "flags": {},
-      "order": 13,
+      "order": 10,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -3641,7 +3498,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 26,
+      "order": 25,
       "mode": 0,
       "inputs": [
         {
@@ -3691,7 +3548,7 @@
         880
       ],
       "flags": {},
-      "order": 14,
+      "order": 11,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -3727,53 +3584,6 @@
       "shape": 1
     },
     {
-      "id": 461,
-      "type": "VAELoader",
-      "pos": [
-        1750,
-        290
-      ],
-      "size": [
-        410,
-        60
-      ],
-      "flags": {},
-      "order": 15,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "label": " ",
-          "name": "VAE",
-          "type": "VAE",
-          "slot_index": 0,
-          "links": [
-            971,
-            983
-          ]
-        }
-      ],
-      "title": "VAE",
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.45",
-        "Node name for S&R": "VAELoader",
-        "models": [
-          {
-            "name": "wan_2.1_vae.safetensors",
-            "url": "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/resolve/main/split_files/vae/wan_2.1_vae.safetensors",
-            "directory": "vae"
-          }
-        ]
-      },
-      "widgets_values": [
-        "wan_2.1_vae.safetensors"
-      ],
-      "color": "#223",
-      "bgcolor": "#335",
-      "shape": 1
-    },
-    {
       "id": 401,
       "type": "ImageResizeKJv2",
       "pos": [
@@ -3787,7 +3597,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 29,
+      "order": 27,
       "mode": 0,
       "inputs": [
         {
@@ -3862,8 +3672,7 @@
         "0, 0, 0",
         "center",
         2,
-        "cpu",
-        "<tr><td>Output: </td><td><b>1</b> x <b>896</b> x <b>1120 | 11.48MB</b></td></tr>"
+        "cpu"
       ],
       "color": "#222",
       "bgcolor": "#000",
@@ -3881,7 +3690,7 @@
         60
       ],
       "flags": {},
-      "order": 16,
+      "order": 12,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -3919,7 +3728,7 @@
         60
       ],
       "flags": {},
-      "order": 17,
+      "order": 13,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -3993,75 +3802,6 @@
       ],
       "color": "#222",
       "bgcolor": "#000",
-      "shape": 1
-    },
-    {
-      "id": 471,
-      "type": "Power Lora Loader (rgthree)",
-      "pos": [
-        310,
-        790
-      ],
-      "size": [
-        450,
-        170
-      ],
-      "flags": {},
-      "order": 32,
-      "mode": 0,
-      "inputs": [
-        {
-          "dir": 3,
-          "label": " ",
-          "name": "model",
-          "type": "MODEL",
-          "link": 1056
-        },
-        {
-          "dir": 3,
-          "label": " ",
-          "name": "clip",
-          "type": "CLIP",
-          "link": 1039
-        }
-      ],
-      "outputs": [
-        {
-          "dir": 4,
-          "label": " ",
-          "name": "MODEL",
-          "shape": 3,
-          "type": "MODEL",
-          "links": [
-            1033
-          ]
-        },
-        {
-          "dir": 4,
-          "label": " ",
-          "name": "CLIP",
-          "shape": 3,
-          "type": "CLIP",
-          "links": null
-        }
-      ],
-      "title": "LoRA - Low noise",
-      "properties": {
-        "cnr_id": "rgthree-comfy",
-        "ver": "b8a9f9464034be666abceabcd88a606f30277703",
-        "Show Strengths": "Single Strength",
-        "aux_id": "rgthree/rgthree-comfy"
-      },
-      "widgets_values": [
-        {},
-        {
-          "type": "PowerLoraLoaderHeaderWidget"
-        },
-        {},
-        ""
-      ],
-      "color": "#323",
-      "bgcolor": "#535",
       "shape": 1
     },
     {
@@ -4188,7 +3928,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 30,
+      "order": 28,
       "mode": 0,
       "inputs": [
         {
@@ -4470,75 +4210,6 @@
       "shape": 1
     },
     {
-      "id": 416,
-      "type": "Power Lora Loader (rgthree)",
-      "pos": [
-        310,
-        580
-      ],
-      "size": [
-        450,
-        170
-      ],
-      "flags": {},
-      "order": 31,
-      "mode": 0,
-      "inputs": [
-        {
-          "dir": 3,
-          "label": " ",
-          "name": "model",
-          "type": "MODEL",
-          "link": 1055
-        },
-        {
-          "dir": 3,
-          "label": " ",
-          "name": "clip",
-          "type": "CLIP",
-          "link": 1038
-        }
-      ],
-      "outputs": [
-        {
-          "dir": 4,
-          "label": " ",
-          "name": "MODEL",
-          "shape": 3,
-          "type": "MODEL",
-          "links": [
-            1032
-          ]
-        },
-        {
-          "dir": 4,
-          "label": " ",
-          "name": "CLIP",
-          "shape": 3,
-          "type": "CLIP",
-          "links": null
-        }
-      ],
-      "title": "LoRA - High noise",
-      "properties": {
-        "cnr_id": "rgthree-comfy",
-        "ver": "b8a9f9464034be666abceabcd88a606f30277703",
-        "Show Strengths": "Single Strength",
-        "aux_id": "rgthree/rgthree-comfy"
-      },
-      "widgets_values": [
-        {},
-        {
-          "type": "PowerLoraLoaderHeaderWidget"
-        },
-        {},
-        ""
-      ],
-      "color": "#323",
-      "bgcolor": "#535",
-      "shape": 1
-    },
-    {
       "id": 505,
       "type": "MagCache",
       "pos": [
@@ -4645,18 +4316,55 @@
       "shape": 1
     },
     {
-      "id": 495,
-      "type": "UnetLoaderGGUF",
+      "id": 415,
+      "type": "Fast Groups Bypasser (rgthree)",
+      "pos": [
+        1750,
+        760
+      ],
+      "size": [
+        410,
+        202
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "label": " ",
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "title": "Optimisations",
+      "properties": {
+        "matchColors": "#696969",
+        "matchTitle": "",
+        "showNav": false,
+        "showAllGraphs": true,
+        "sort": "position",
+        "customSortAlphabet": "",
+        "toggleRestriction": "default"
+      },
+      "color": "#2a363b",
+      "bgcolor": "#3f5159",
+      "shape": 1
+    },
+    {
+      "id": 522,
+      "type": "UNETLoader",
       "pos": [
         1750,
         -130
       ],
       "size": [
         410,
-        60
+        82
       ],
       "flags": {},
-      "order": 18,
+      "order": 15,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -4665,30 +4373,175 @@
           "name": "MODEL",
           "type": "MODEL",
           "links": [
-            1055
+            1113
           ]
         }
       ],
       "title": "Model - High noise",
       "properties": {
-        "cnr_id": "ComfyUI-GGUF",
-        "ver": "b3ec875a68d94b758914fd48d30571d953bb7a54",
-        "Node name for S&R": "UnetLoaderGGUF",
-        "aux_id": "city96/ComfyUI-GGUF"
+        "cnr_id": "comfy-core",
+        "ver": "0.3.46",
+        "Node name for S&R": "UNETLoader"
       },
       "widgets_values": [
-        "WAN\\wan2.2_i2v_high_noise_14B_Q4_K_S.gguf"
+        "WAN\\wan2.2_t2v_high_noise_14B_fp8_scaled.safetensors",
+        "default"
       ],
       "color": "#223",
       "bgcolor": "#335",
       "shape": 1
     },
     {
-      "id": 496,
-      "type": "UnetLoaderGGUF",
+      "id": 523,
+      "type": "UNETLoader",
       "pos": [
         1750,
-        -30
+        -10
+      ],
+      "size": [
+        410,
+        82
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "label": " ",
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            1114
+          ]
+        }
+      ],
+      "title": "Model - Low noise",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.46",
+        "Node name for S&R": "UNETLoader"
+      },
+      "widgets_values": [
+        "WAN\\wan2.2_t2v_low_noise_14B_fp8_scaled.safetensors",
+        "default"
+      ],
+      "color": "#223",
+      "bgcolor": "#335",
+      "shape": 1
+    },
+    {
+      "id": 502,
+      "type": "mxSlider",
+      "pos": [
+        1750,
+        110
+      ],
+      "size": [
+        410,
+        30
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 17,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "label": "%",
+          "name": "",
+          "type": "INT",
+          "slot_index": 0,
+          "links": [
+            1071
+          ]
+        }
+      ],
+      "title": "Reduce VRAM usage (BlockSwap)",
+      "properties": {
+        "cnr_id": "comfyui-mxtoolkit",
+        "ver": "3659749ab6b19ab4bc7b2ed144e3bcf92813fbf7",
+        "Node name for S&R": "mxSlider",
+        "value": 100,
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "decimals": 0,
+        "snap": true,
+        "aux_id": "Smirnov75/ComfyUI-mxToolkit",
+        "widget_ue_connectable": {
+          "Xi": true,
+          "Xf": true,
+          "isfloatX": true
+        }
+      },
+      "widgets_values": [
+        100,
+        100,
+        0
+      ],
+      "color": "#432",
+      "bgcolor": "#653",
+      "shape": 1
+    },
+    {
+      "id": 460,
+      "type": "CLIPLoader",
+      "pos": [
+        1750,
+        180
+      ],
+      "size": [
+        410,
+        106
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "label": " ",
+          "name": "CLIP",
+          "type": "CLIP",
+          "slot_index": 0,
+          "links": [
+            967,
+            968,
+            1038,
+            1039
+          ]
+        }
+      ],
+      "title": "CLIP",
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.45",
+        "Node name for S&R": "CLIPLoader",
+        "models": [
+          {
+            "name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+            "url": "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+            "directory": "text_encoders"
+          }
+        ]
+      },
+      "widgets_values": [
+        "umt5-xxl-encoder-fp8-e4m3fn-scaled.safetensors",
+        "wan",
+        "default"
+      ],
+      "color": "#223",
+      "bgcolor": "#335",
+      "shape": 1
+    },
+    {
+      "id": 461,
+      "type": "VAELoader",
+      "pos": [
+        1750,
+        320
       ],
       "size": [
         410,
@@ -4701,73 +4554,183 @@
       "outputs": [
         {
           "label": " ",
-          "name": "MODEL",
-          "type": "MODEL",
+          "name": "VAE",
+          "type": "VAE",
+          "slot_index": 0,
           "links": [
-            1056
+            971,
+            983
           ]
         }
       ],
-      "title": "Model - Low noise",
+      "title": "VAE",
       "properties": {
-        "cnr_id": "ComfyUI-GGUF",
-        "ver": "b3ec875a68d94b758914fd48d30571d953bb7a54",
-        "Node name for S&R": "UnetLoaderGGUF",
-        "aux_id": "city96/ComfyUI-GGUF"
+        "cnr_id": "comfy-core",
+        "ver": "0.3.45",
+        "Node name for S&R": "VAELoader",
+        "models": [
+          {
+            "name": "wan_2.1_vae.safetensors",
+            "url": "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/resolve/main/split_files/vae/wan_2.1_vae.safetensors",
+            "directory": "vae"
+          }
+        ]
       },
       "widgets_values": [
-        "WAN\\wan2.2_i2v_low_noise_14B_Q4_K_S.gguf"
+        "wan_2.1_vae.safetensors"
       ],
       "color": "#223",
       "bgcolor": "#335",
       "shape": 1
     },
     {
-      "id": 85,
-      "type": "mxSlider",
+      "id": 416,
+      "type": "Power Lora Loader (rgthree)",
       "pos": [
-        540,
-        320
+        310,
+        580
       ],
       "size": [
-        220,
-        30
+        450,
+        170
       ],
       "flags": {},
-      "order": 20,
+      "order": 31,
       "mode": 0,
-      "inputs": [],
-      "outputs": [
+      "inputs": [
         {
-          "name": "",
-          "type": "FLOAT",
-          "slot_index": 0,
-          "links": [
-            992,
-            993
-          ]
+          "dir": 3,
+          "label": " ",
+          "name": "model",
+          "type": "MODEL",
+          "link": 1113
+        },
+        {
+          "dir": 3,
+          "label": " ",
+          "name": "clip",
+          "type": "CLIP",
+          "link": 1038
         }
       ],
-      "title": "CFG",
+      "outputs": [
+        {
+          "dir": 4,
+          "label": " ",
+          "name": "MODEL",
+          "shape": 3,
+          "type": "MODEL",
+          "links": [
+            1032
+          ]
+        },
+        {
+          "dir": 4,
+          "label": " ",
+          "name": "CLIP",
+          "shape": 3,
+          "type": "CLIP",
+          "links": null
+        }
+      ],
+      "title": "LoRA - High noise",
       "properties": {
-        "cnr_id": "comfyui-mxtoolkit",
-        "ver": "3659749ab6b19ab4bc7b2ed144e3bcf92813fbf7",
-        "Node name for S&R": "mxSlider",
-        "value": 3.5,
-        "min": 0,
-        "max": 10,
-        "step": 0.1,
-        "decimals": 1,
-        "snap": true,
-        "aux_id": "Smirnov75/ComfyUI-mxToolkit"
+        "cnr_id": "rgthree-comfy",
+        "ver": "b8a9f9464034be666abceabcd88a606f30277703",
+        "Show Strengths": "Single Strength",
+        "aux_id": "rgthree/rgthree-comfy"
       },
       "widgets_values": [
-        3,
-        3.5,
-        1
+        {},
+        {
+          "type": "PowerLoraLoaderHeaderWidget"
+        },
+        {
+          "on": true,
+          "lora": "WAN\\Wan2.2-Lightning_I2V-A14B-4steps-lora_HIGH_fp16.safetensors",
+          "strength": 1,
+          "strengthTwo": null
+        },
+        {},
+        ""
       ],
-      "color": "#432",
-      "bgcolor": "#653",
+      "color": "#323",
+      "bgcolor": "#535",
+      "shape": 1
+    },
+    {
+      "id": 471,
+      "type": "Power Lora Loader (rgthree)",
+      "pos": [
+        310,
+        790
+      ],
+      "size": [
+        450,
+        170
+      ],
+      "flags": {},
+      "order": 32,
+      "mode": 0,
+      "inputs": [
+        {
+          "dir": 3,
+          "label": " ",
+          "name": "model",
+          "type": "MODEL",
+          "link": 1114
+        },
+        {
+          "dir": 3,
+          "label": " ",
+          "name": "clip",
+          "type": "CLIP",
+          "link": 1039
+        }
+      ],
+      "outputs": [
+        {
+          "dir": 4,
+          "label": " ",
+          "name": "MODEL",
+          "shape": 3,
+          "type": "MODEL",
+          "links": [
+            1033
+          ]
+        },
+        {
+          "dir": 4,
+          "label": " ",
+          "name": "CLIP",
+          "shape": 3,
+          "type": "CLIP",
+          "links": null
+        }
+      ],
+      "title": "LoRA - Low noise",
+      "properties": {
+        "cnr_id": "rgthree-comfy",
+        "ver": "b8a9f9464034be666abceabcd88a606f30277703",
+        "Show Strengths": "Single Strength",
+        "aux_id": "rgthree/rgthree-comfy"
+      },
+      "widgets_values": [
+        {},
+        {
+          "type": "PowerLoraLoaderHeaderWidget"
+        },
+        {
+          "on": true,
+          "lora": "WAN\\Wan2.2-Lightning_I2V-A14B-4steps-lora_LOW_fp16.safetensors",
+          "strength": 1,
+          "strengthTwo": null
+        },
+        {},
+        ""
+      ],
+      "color": "#323",
+      "bgcolor": "#535",
       "shape": 1
     },
     {
@@ -4782,7 +4745,7 @@
         30
       ],
       "flags": {},
-      "order": 21,
+      "order": 20,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -4802,7 +4765,7 @@
         "cnr_id": "comfyui-mxtoolkit",
         "ver": "3659749ab6b19ab4bc7b2ed144e3bcf92813fbf7",
         "Node name for S&R": "mxSlider",
-        "value": 20,
+        "value": 4,
         "min": 1,
         "max": 30,
         "step": 1,
@@ -4811,9 +4774,57 @@
         "aux_id": "Smirnov75/ComfyUI-mxToolkit"
       },
       "widgets_values": [
-        20,
-        20,
+        4,
+        4,
         0
+      ],
+      "color": "#432",
+      "bgcolor": "#653",
+      "shape": 1
+    },
+    {
+      "id": 85,
+      "type": "mxSlider",
+      "pos": [
+        540,
+        320
+      ],
+      "size": [
+        220,
+        30
+      ],
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "FLOAT",
+          "slot_index": 0,
+          "links": [
+            992,
+            993
+          ]
+        }
+      ],
+      "title": "CFG",
+      "properties": {
+        "cnr_id": "comfyui-mxtoolkit",
+        "ver": "3659749ab6b19ab4bc7b2ed144e3bcf92813fbf7",
+        "Node name for S&R": "mxSlider",
+        "value": 1,
+        "min": 0,
+        "max": 10,
+        "step": 0.1,
+        "decimals": 1,
+        "snap": true,
+        "aux_id": "Smirnov75/ComfyUI-mxToolkit"
+      },
+      "widgets_values": [
+        1,
+        1,
+        1
       ],
       "color": "#432",
       "bgcolor": "#653",
@@ -5470,22 +5481,6 @@
       "MODEL"
     ],
     [
-      1055,
-      495,
-      0,
-      416,
-      0,
-      "MODEL"
-    ],
-    [
-      1056,
-      496,
-      0,
-      471,
-      0,
-      "MODEL"
-    ],
-    [
       1057,
       497,
       0,
@@ -5724,6 +5719,22 @@
       493,
       0,
       "MODEL"
+    ],
+    [
+      1113,
+      522,
+      0,
+      416,
+      0,
+      "MODEL"
+    ],
+    [
+      1114,
+      523,
+      0,
+      471,
+      0,
+      "MODEL"
     ]
   ],
   "groups": [
@@ -5941,8 +5952,8 @@
     "ds": {
       "scale": 0.9740488365384737,
       "offset": [
-        -184.65452381989218,
-        246.4301424347559
+        -38.860248959584275,
+        249.2665607063219
       ]
     },
     "frontendVersion": "1.25.8",
