@@ -2,25 +2,44 @@
 
 ![ComfyUI](https://img.shields.io/badge/ComfyUI-Workflow%20Collection-orange.svg)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
+[![Auto-Sync](https://img.shields.io/badge/Auto--Sync-Supported-cyan)](https://github.com/UmeAiRT/ComfyUI-UmeAiRT-Sync)
 
-Welcome to this collection of workflows for ComfyUI, designed and optimized to work with various models and techniques. This repository is the ideal companion to the UmeAiRT Auto-Installer.
+Welcome to this collection of workflows for ComfyUI, designed and optimized to work with various models and techniques. This repository is the ideal companion to the UmeAiRT ecosystem.
 
 ---
 
 ## Prerequisites
 
-**IMPORTANT:** These workflows are designed to work with the specific ecosystem and custom nodes installed by the **[UmeAiRT ComfyUI Auto-Installer](https://github.com/UmeAiRT/ComfyUI-Auto_installer)**. If you are using a standard ComfyUI installation, you will likely encounter missing node errors.
+**IMPORTANT:** These workflows are designed to work with the specific ecosystem and custom nodes installed by the **[UmeAiRT ComfyUI Auto-Installer](https://github.com/UmeAiRT/ComfyUI-Auto_installer)**. If you are using a standard ComfyUI installation, you might encounter missing node errors.
+
+---
 
 ## How to Use
 
-### Recommended Method: The Auto-Installer
-The easiest way to use these workflows is through the UmeAiRT installer. It automatically clones this entire repository into the correct folder (`ComfyUI/user/default/workflows/`), giving you access to all workflows directly within the ComfyUI interface.
+### 🥇 Method 1: Auto-Sync (Recommended)
+**Forget manual downloads.** Use my custom loader node to keep your workflows automatically updated every time you start ComfyUI.
 
-### Manual Method (via Release)
-1.  Go to the [**Releases**](https://github.com/UmeAiRT/ComfyUI-Workflows/releases) page of this repository.
-2.  Download the source code `.zip` file from the latest release.
-3.  Extract the contents of the zip file into your `ComfyUI/user/default/workflows` directory.
-4.  You may need to rename the extracted folder to something simple, like `UmeAiRT-Workflows`. Your final path should look like this: `ComfyUI\user\default\workflows\UmeAiRT-Workflows\FLUX...`
+1. Open **ComfyUI Manager**.
+2. Search for and install **`ComfyUI-UmeAiRT-Sync`**.
+3. Restart ComfyUI.
+4. Your workflows will appear automatically in `ComfyUI/user/default/workflows/UmeAiRT`.
+
+### 🥈 Method 2: The Auto-Installer
+If you are setting up ComfyUI from scratch, the UmeAiRT installer automatically clones this entire repository into the correct folder during the installation process.
+
+### 🥉 Method 3: Manual Method
+1.  Go to the `ComfyUI/user/default/workflows` directory.
+2.  Execute the command `git clone https://github.com/UmeAiRT/ComfyUI-Workflows`.
+
+---
+
+## 📂 Naming Convention
+
+To make finding files easier, workflows now follow a strict naming convention: `Model_Function_Variant.json`.
+
+* **Standard:** `Flux_Txt2Img.json` (Base version)
+* **GGUF:** `Flux_Txt2Img_GGUF.json` (Optimized for low VRAM)
+* **Nunchaku:** `Flux_Txt2Img_Nunchaku.json` (Specific backend)
 
 ---
 
@@ -28,86 +47,96 @@ The easiest way to use these workflows is through the UmeAiRT installer. It auto
 
 Here is the list of available workflows, categorized by model family.
 
-### FLUX
+### ⚡ FLUX
 Workflows optimized for models in the FLUX family.
 
-#### Base (fp16 / fp8) & GGUF
-* **`TXT to IMG.json`**: Basic text-to-image generation.
-* **`IMG to IMG.json`**: Basic image-to-image generation.
-* **`INPAINT.json`**: For modifying or replacing part of an image (inpainting).
-* **`OUTPAINT.json`**: For extending an image beyond its original borders (outpainting).
-* **`KONTEXT.json`**: For contextual editing and generation.
-* **ControlNet**
-    * `CtrlNet Canny.json`: Guides generation using Canny edges.
-    * `CtrlNet Depth.json`: Guides generation using a depth map.
-    * `CtrlNet HED.json`: Guides generation using soft edges (HED).
-    * `CtrlNet Openpose.json`: Guides generation from a skeletal pose.
-* **Tools**
-    * `Background changer.json`: Workflow to change the background of an image.
-    * `LoRA.json`: Example of how to use a LoRA with FLUX models.
-    * `PuLID_Redux.json`: Using PuLID and Redux for face enhancement.
-    * `Upscale.json`: Upscales the resolution of a generated image.
+#### Generation
+* **`Flux_Txt2Img.json`**: Basic text-to-image generation.
+* **`Flux_Img2Img.json`**: Transform an existing image.
+* **`Flux_Kontext.json`**: Advanced contextual generation.
 
-#### Nunchaku
-A specific set of workflows for the Nunchaku variant.
-* **`TXT to IMG.json`**
-* **`IMG to IMG.json`**
-* **`INPAINT.json`**
-* **`OUTPAINT.json`**
-* **`KONTEXT.json`**
+#### Editing
+* **`Flux_Inpaint.json`**: Modify or replace specific areas of an image.
+* **`Flux_Outpaint.json`**: Extend an image beyond its original borders.
+
+#### Tools & ControlNet
+* **`Flux_ControlNet_*.json`**: Precise control using Canny, Depth, HED, or OpenPose.
+* **`Flux_LoRA.json`**: How to implement LoRA adapters.
+* **`Flux_Upscale.json`**: High-fidelity upscaling.
 
 ---
 
-### HIDREAM
-Workflows designed for the HiDream (image) model.
+### 🎨 SDXL
+Robust workflows for Stable Diffusion XL.
 
-#### Base & GGUF
-* **`HiDream - TXT to IMG.json`**: Text-to-image generation with HiDream.
-* **`HiDream - IMG to IMG.json`**: Image-to-image generation with HiDream.
-* **`HiDream - INPAINT.json`**: Inpainting with the specific capabilities of HiDream.
+#### Generation
+* **`SDXL_Txt2Img.json`**: High-quality generation from prompt.
+* **`SDXL_Img2Img.json`**: Image variation and restyling.
 
----
+#### Editing
+* **`SDXL_Inpaint.json`**: Seamless object removal or addition.
+* **`SDXL_Outpaint.json`**: Canvas expansion.
 
-### LTXV
-Workflows for the LTX-Video model (video generation).
-
-#### Base & GGUF
-* **`LTXV - TXT to VIDEO.json`**: Text-to-video generation.
-* **`LTXV - IMG to VIDEO.json`**: Animates a starting image to create a video.
+#### Tools
+* **`SDXL_ControlNet.json`**: Structure guidance.
+* **`SDXL_LoraTester.json`**: Utility to quickly test LoRA weights.
 
 ---
 
-### WAN
-Workflows for models in the WAN 2.1 family (video generation).
+### 🖌️ Z-IMAGE
+Workflows for the Z-Image generation model.
+
+* **`Z-Image_Txt2Img.json`**: Standard generation.
+* **`Z-Image_Img2Img.json`**: Image-to-image transformation.
+* **`Z-Image_Inpaint.json`**: Native inpainting capabilities.
+
+---
+
+### 🖼️ HIDREAM
+Workflows designed for the HiDream model.
+
+* **`HiDream_Txt2Img.json`**: Text-to-image generation.
+* **`HiDream_Img2Img.json`**: Image transformation.
+* **`HiDream_Inpaint.json`**: Native inpainting capabilities.
+
+---
+
+### 🎬 LTXV
+Workflows for the LTX-Video model.
+
+* **`LTXV_Txt2Video.json`**: Create short clips from text.
+* **`LTXV_Img2Video.json`**: Animate static images.
+
+---
+
+### 🎥 WAN
+Workflows for models in the WAN family.
 
 #### WAN 2.1
-
-##### Base & GGUF
-* **`TXT to VIDEO.json`**: Text-to-video generation.
-* **`IMG to VIDEO.json`**: Animates an image to create a video.
-* **`Face to VIDEO.json`**: Applies an identity (face) to a video.
-* **`VIDEO EXTENSION.json`**: Extends the duration of an existing video.
-* **`VIDEO to LOOP.json`**: Transforms a short video into a seamless loop.
-* **`StartEndFrames.json`**: Generates a video by specifying a start and an end frame.
-* **`FUN Control.json`**: Advanced controls for video generation.
-* **`VACE.json`**: Video composition and editing.
+* **`Wan_Txt2Video.json`**: Standard text-to-video.
+* **`Wan_Img2Video.json`**: Standard image-to-video.
+* **`Wan_Face2Video.json`**: Character consistency in video.
+* **`Wan_Video_Extension.json`**: Extend clip duration.
+* **`Wan_Video2Loop.json`**: Create seamless loops.
+* **`Wan_VACE.json`**: Advanced Video Composition/Editing.
 
 #### WAN 2.2
-
-##### Base & GGUF
-* **`TXT to VIDEO.json`**
-* **`IMG to VIDEO.json`**
-* **`StartEndFrame.json`**
+* **`Wan2.2_Txt2Video.json`**: High-quality 720p text-to-video generation.
+* **`Wan2.2_Img2Video.json`**: Image animation with the new 2.2 model.
+* **`Wan2.2_Txt2Img.json`**: Still image generation capabilities.
+* **`Wan2.2_Img2Img.json`**: Image-to-image transformation.
+* **`Wan2.2_StartEndFrame.json`**: Generate video bridging a start and end image.
+* **`Wan2.2_FunControl.json`**: Advanced control features for video generation.
 
 ---
 
-### General Tools
-Workflows for various utility tasks that can be used with multiple models.
+### 🛠️ General Tools
+Utility tasks compatible with multiple models.
 
-* **`IMG to TXT.json`**: Generates a text prompt (caption) from an input image.
-* **`Frames interpolations.json`**: Increases the smoothness of a video by creating intermediate frames.
-* **`Upscaler.json`**: Increases the resolution of an image or video frames.
-* **`Video merge.json`**: Merges several video clips.
+* **`Img2Txt_Caption.json`**: Extract prompts from images (JoyTag/WD14).
+* **`Video_Interpolation.json`**: Smooth out frame rates.
+* **`Video_Upscaler.json`**: Simple upscaling for any video.
+* **`Video_Merge.json`**: Stitch multiple video clips together.
 
 ---
 
